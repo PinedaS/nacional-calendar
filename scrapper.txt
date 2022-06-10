@@ -1,7 +1,0 @@
-Link: $x('//div[@class="contenedor-partido"]/ul/li[2]/a/@href')
-
-Fecha y hora: $x('//div[@class="info-partido-actual inline-elements"]/p[3]')
-
-Equipo1: $x('//div[@class="equipo-left"]/div[1]/p[1]/text()')
-
-Equipo2: $x('//div[@class="equipo-right"]/div[1]/p[1]/text()')
