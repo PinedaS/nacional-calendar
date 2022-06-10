@@ -24,7 +24,7 @@ def parse_info():
             team1 = parsed.xpath(XPATH_TEAM1)[0].text
             team2 = parsed.xpath(XPATH_TEAM2)[0].text
 
-            return [date_football_match, time_football_match, team1, team2]
+            return dict(date=date_football_match, time=time_football_match, team1=team1, team2=team2)
 
         else:
             raise ValueError("Error: " + response.status_code)
@@ -35,7 +35,3 @@ def parse_info():
 
 def run():
     return parse_info()
-
-
-if __name__ == '__main__':
-    run()
